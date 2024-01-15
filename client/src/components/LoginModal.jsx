@@ -133,12 +133,21 @@ const LoginModal = ({ isOpen, setIsOpen }) => {
                     />
                   </div>
 
-                  <button
+                  <button className="bg-color-green text-white py-2 px-4 rounded-full mb-4 w-full">
+                    {isSignup ? "Sign up" : "Login"}
+                  </button>
+                  {/* {isSignup && <button
+                    className="bg-color-green text-white py-2 px-4 rounded-full mb-4 w-full"
+                    onClick={handleSignup}
+                  >
+                    Sign up
+                  </button>}
+                 {!isSignup && <button
                     className="bg-color-green text-white py-2 px-4 rounded-full mb-4 w-full"
                     onClick={handleLogin}
                   >
-                    {isSignup ? "Sign up" : "Login"}
-                  </button>
+                    Login
+                  </button>} */}
                 </form>
 
                 {isSignup ? (
